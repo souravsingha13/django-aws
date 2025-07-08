@@ -29,7 +29,6 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-print("Django settings are being loaded...")
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
