@@ -23,7 +23,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "
             cd /home/ec2-user/django-aws/myproject &&
-            git pull origin main &&
+            git pull origin master &&
             source ../venv/bin/activate &&
             pip install -r ../requirements.txt &&
             python manage.py migrate &&
